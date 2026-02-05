@@ -14,6 +14,7 @@ body{
   font-family:'Montserrat',sans-serif;
   background:linear-gradient(135deg,#1f1c2c, #928dab);
   color:#fff;
+  min-height:100vh;
 }
 
 .container{
@@ -43,7 +44,6 @@ h1{
   border-radius:18px;
   padding:18px;
   box-shadow:0 6px 20px rgba(0,0,0,0.35);
-
   display:flex;
   flex-direction:column;
   transition:transform 0.3s, box-shadow 0.3s;
@@ -54,19 +54,18 @@ h1{
   box-shadow:0 10px 30px rgba(0,0,0,0.5);
 }
 
-/* NASLOV – ZAKLJUČANA VISINA */
+/* NASLOV */
 .card h3{
   font-size:18px;
   text-align:center;
   margin:0 0 14px;
-
   min-height:48px;
   display:flex;
   align-items:center;
   justify-content:center;
 }
 
-/* VIDEO WRAPPER – ISTI RATIO */
+/* VIDEO */
 .video{
   position:relative;
   width:100%;
@@ -86,7 +85,6 @@ h1{
 
 /* DUGME */
 .btn{
-  margin-top:auto;
   margin-top:18px;
   padding:12px;
   text-align:center;
@@ -100,7 +98,7 @@ h1{
 
 .btn:hover{
   background:#00c853;
-  transform:scale(1.03);
+  transform:scale(1.04);
 }
 
 /* MOBILE */
@@ -121,7 +119,11 @@ h1{
   <div class="card">
     <h3>Kako instalirati Downloader</h3>
     <div class="video">
-      <iframe src="https://www.youtube.com/embed/VIDEO_ID_1" allowfullscreen></iframe>
+      <iframe 
+        src="https://www.youtube.com/embed/VIDEO_ID_1"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
     </div>
     <a class="btn" href="https://www.youtube.com/watch?v=VIDEO_ID_1" target="_blank">
       Otvori na YouTube
@@ -132,7 +134,11 @@ h1{
   <div class="card">
     <h3>Smart Tube podešavanje</h3>
     <div class="video">
-      <iframe src="https://www.youtube.com/embed/VIDEO_ID_2" allowfullscreen></iframe>
+      <iframe 
+        src="https://www.youtube.com/embed/VIDEO_ID_2"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
     </div>
     <a class="btn" href="https://www.youtube.com/watch?v=VIDEO_ID_2" target="_blank">
       Otvori na YouTube
@@ -143,7 +149,11 @@ h1{
   <div class="card">
     <h3>Instalacija EON TV aplikacije</h3>
     <div class="video">
-      <iframe src="https://www.youtube.com/embed/VIDEO_ID_3" allowfullscreen></iframe>
+      <iframe 
+        src="https://www.youtube.com/embed/VIDEO_ID_3"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
     </div>
     <a class="btn" href="https://www.youtube.com/watch?v=VIDEO_ID_3" target="_blank">
       Otvori na YouTube

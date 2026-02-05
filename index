@@ -1,1 +1,122 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Balkan Media – Video tutoriali</title>
 
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+body{
+  margin:0;
+  padding:20px;
+  font-family:'Montserrat',sans-serif;
+  background:linear-gradient(135deg,#1f1c2c,#928dab);
+  color:#fff;
+}
+
+.container{
+  max-width:900px;
+  margin:auto;
+}
+
+h1{
+  text-align:center;
+  margin-bottom:30px;
+  background:linear-gradient(90deg,#00e676,#00c853);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+
+.cards{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:20px;
+}
+
+.card{
+  background:rgba(255,255,255,0.12);
+  border-radius:16px;
+  padding:15px;
+  box-shadow:0 4px 15px rgba(0,0,0,0.3);
+}
+
+.card h3{
+  font-size:18px;
+  margin-bottom:10px;
+  text-align:center;
+}
+
+.card iframe{
+  width:100%;
+  height:180px;
+  border-radius:12px;
+  border:none;
+}
+
+.btn{
+  display:block;
+  margin:12px auto 0;
+  padding:10px;
+  background:#00e676;
+  color:#003300;
+  text-align:center;
+  font-weight:600;
+  border-radius:10px;
+  text-decoration:none;
+}
+
+.btn:hover{
+  background:#00c853;
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+
+<h1>🎬 Video tutoriali</h1>
+
+<div class="cards">
+
+  <!-- KARTICA 1 -->
+  <div class="card">
+    <h3>Kako instalirati Downloader</h3>
+    <iframe 
+      src="https://www.youtube.com/embed/VIDEO_ID_1" 
+      allowfullscreen>
+    </iframe>
+    <a class="btn" href="https://www.youtube.com/watch?v=VIDEO_ID_1" target="_blank">
+      Otvori na YouTube
+    </a>
+  </div>
+
+  <!-- KARTICA 2 -->
+  <div class="card">
+    <h3>Smart Tube podešavanje</h3>
+    <iframe 
+      src="https://www.youtube.com/embed/VIDEO_ID_2" 
+      allowfullscreen>
+    </iframe>
+    <a class="btn" href="https://www.youtube.com/watch?v=VIDEO_ID_2" target="_blank">
+      Otvori na YouTube
+    </a>
+  </div>
+
+  <!-- KARTICA 3 -->
+  <div class="card">
+    <h3>Instalacija EON TV</h3>
+    <iframe 
+      src="https://www.youtube.com/embed/VIDEO_ID_3" 
+      allowfullscreen>
+    </iframe>
+    <a class="btn" href="https://www.youtube.com/watch?v=VIDEO_ID_3" target="_blank">
+      Otvori na YouTube
+    </a>
+  </div>
+
+</div>
+</div>
+</body>
+</html>

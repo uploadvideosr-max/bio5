@@ -18,40 +18,34 @@ body{
   min-height:100vh;
 }
 
-/* LOGO */
-.logo{
-  position:fixed;
-  top:20px;
-  right:20px;
-  width:100px;
-  height:100px;
-  z-index:1000;
-  animation:blink 5s infinite;
-}
-.logo img{
-  width:100%;
-  height:100%;
-  object-fit:contain;
-}
-
-/* LOGO ANIMACIJA */
-@keyframes blink{
-  0%,50%,100%{opacity:1;}
-  25%,75%{opacity:0;}
-}
-
+/* CONTAINER */
 .container{
   max-width:1100px;
   margin:auto;
+  text-align:center;
 }
 
-h1{
-  text-align:center;
+/* INTRO LOGO I NASLOV */
+.intro{
   margin-bottom:40px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+
+.intro .logo{
+  width:100px;
+  height:100px;
+  margin-bottom:15px;
+  animation: blink 5s linear infinite;
+}
+
+.intro h1{
   font-size:34px;
   background:linear-gradient(90deg,#00e676,#00c853);
   -webkit-background-clip:text;
   -webkit-text-fill-color:transparent;
+  margin:0;
 }
 
 /* GRID */
@@ -120,73 +114,78 @@ h1{
   transform:scale(1.04);
 }
 
+/* ANIMACIJA TREPTANJA LOGA */
+@keyframes blink{
+  0%,50%,100%{opacity:1;}
+  25%,75%{opacity:0.2;}
+}
+
 /* MOBILE */
 @media(max-width:600px){
   h1{font-size:26px;}
-  .logo{width:70px;height:70px;}
+  .intro .logo{width:70px;height:70px;}
 }
 </style>
 </head>
 
 <body>
 
-<!-- LOGO -->
-<a href="index.html" class="logo">
-  <img src="images/edfc160d-608b-42ec-b685-d1404131fbf4.png" alt="Balkan Media Logo">
-</a>
-
 <div class="container">
 
-<h1>🎬 Video uputstva</h1>
-
-<div class="cards">
-
-<!-- KARTICA 1 -->
-<div class="card">
-  <h3>Podešavanje titlova na HISENSE VIDAA TV-u</h3>
-  <div class="video">
-    <iframe src="https://www.youtube.com/embed/a3IGZCqTz64" allowfullscreen></iframe>
+  <div class="intro">
+    <!-- LOGO iznad naslova -->
+    <img src="images/edfc160d-608b-42ec-b685-d1404131fbf4.png" alt="Balkan Media Logo" class="logo">
+    <h1>🎬 Video uputstva</h1>
   </div>
-  <a class="btn" href="https://youtu.be/a3IGZCqTz64" target="_blank">Otvori na YouTube</a>
-</div>
 
-<!-- KARTICA 2 -->
-<div class="card">
-  <h3>Instalacija AMAZON FIRE Stick uređaja</h3>
-  <div class="video">
-    <iframe src="https://www.youtube.com/embed/IzRNOzp76GM" allowfullscreen></iframe>
+  <div class="cards">
+
+    <!-- KARTICA 1 -->
+    <div class="card">
+      <h3>Podešavanje titlova na HISENSE VIDAA TV-u</h3>
+      <div class="video">
+        <iframe src="https://www.youtube.com/embed/a3IGZCqTz64" allowfullscreen></iframe>
+      </div>
+      <a class="btn" href="https://youtu.be/a3IGZCqTz64" target="_blank">Otvori na YouTube</a>
+    </div>
+
+    <!-- KARTICA 2 -->
+    <div class="card">
+      <h3>Instalacija AMAZON FIRE Stick uređaja</h3>
+      <div class="video">
+        <iframe src="https://www.youtube.com/embed/IzRNOzp76GM" allowfullscreen></iframe>
+      </div>
+      <a class="btn" href="https://youtu.be/IzRNOzp76GM" target="_blank">Otvori na YouTube</a>
+    </div>
+
+    <!-- KARTICA 3 -->
+    <div class="card">
+      <h3>Instaliranje DOWNLOADER aplikacije</h3>
+      <div class="video">
+        <iframe src="https://www.youtube.com/embed/_yQXHL_9BiQ" allowfullscreen></iframe>
+      </div>
+      <a class="btn" href="https://youtu.be/_yQXHL_9BiQ" target="_blank">Otvori na YouTube</a>
+    </div>
+
+    <!-- KARTICA 4 -->
+    <div class="card">
+      <h3>Downloader instalacija na ANDROID TV</h3>
+      <div class="video">
+        <iframe src="https://www.youtube.com/embed/CiBRaw1TEUY" allowfullscreen></iframe>
+      </div>
+      <a class="btn" href="https://youtu.be/CiBRaw1TEUY" target="_blank">Otvori na YouTube</a>
+    </div>
+
+    <!-- KARTICA 5 -->
+    <div class="card">
+      <h3>Ibo Player Pro za Roku TV</h3>
+      <div class="video">
+        <iframe src="https://www.youtube.com/embed/kvrbqINb2zo" allowfullscreen></iframe>
+      </div>
+      <a class="btn" href="https://youtu.be/kvrbqINb2zo" target="_blank">Otvori na YouTube</a>
+    </div>
+
   </div>
-  <a class="btn" href="https://youtu.be/IzRNOzp76GM" target="_blank">Otvori na YouTube</a>
-</div>
-
-<!-- KARTICA 3 -->
-<div class="card">
-  <h3>Instaliranje DOWNLOADER aplikacije</h3>
-  <div class="video">
-    <iframe src="https://www.youtube.com/embed/_yQXHL_9BiQ" allowfullscreen></iframe>
-  </div>
-  <a class="btn" href="https://youtu.be/_yQXHL_9BiQ" target="_blank">Otvori na YouTube</a>
-</div>
-
-<!-- KARTICA 4 -->
-<div class="card">
-  <h3>Downloader instalacija na ANDROID TV</h3>
-  <div class="video">
-    <iframe src="https://www.youtube.com/embed/CiBRaw1TEUY" allowfullscreen></iframe>
-  </div>
-  <a class="btn" href="https://youtu.be/CiBRaw1TEUY" target="_blank">Otvori na YouTube</a>
-</div>
-
-<!-- KARTICA 5 -->
-<div class="card">
-  <h3>Ibo Player Pro za Roku TV</h3>
-  <div class="video">
-    <iframe src="https://www.youtube.com/embed/kvrbqINb2zo" allowfullscreen></iframe>
-  </div>
-  <a class="btn" href="https://youtu.be/kvrbqINb2zo" target="_blank">Otvori na YouTube</a>
-</div>
-
-</div>
 </div>
 
 </body>

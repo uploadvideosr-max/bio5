@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Balkan Media – Video tutoriali</title>
+<title>Balkan Media – Video tutorijali</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
 
@@ -12,7 +12,7 @@ body{
   margin:0;
   padding:30px 20px;
   font-family:'Montserrat',sans-serif;
-  background:linear-gradient(135deg,#1f1c2c, #928dab);
+  background:linear-gradient(135deg,#1f1c2c,#928dab);
   color:#fff;
   min-height:100vh;
 }
@@ -22,6 +22,20 @@ body{
   margin:auto;
 }
 
+/* LOGO */
+.logo{
+  text-align:center;
+  margin-bottom:15px;
+}
+
+.logo img{
+  max-width:180px;
+  width:100%;
+  height:auto;
+  filter:drop-shadow(0 6px 14px rgba(0,0,0,0.5));
+}
+
+/* NASLOV */
 h1{
   text-align:center;
   margin-bottom:40px;
@@ -54,7 +68,6 @@ h1{
   box-shadow:0 10px 30px rgba(0,0,0,0.5);
 }
 
-/* NASLOV */
 .card h3{
   font-size:18px;
   text-align:center;
@@ -69,7 +82,7 @@ h1{
 .video{
   position:relative;
   width:100%;
-  padding-top:56.25%; /* 16:9 */
+  padding-top:56.25%;
   border-radius:14px;
   overflow:hidden;
   background:#000;
@@ -101,6 +114,14 @@ h1{
   transform:scale(1.04);
 }
 
+/* FOOTER */
+.footer{
+  text-align:center;
+  margin-top:50px;
+  font-size:14px;
+  opacity:0.8;
+}
+
 /* MOBILE */
 @media(max-width:600px){
   h1{font-size:26px;}
@@ -111,86 +132,61 @@ h1{
 <body>
 <div class="container">
 
-<h1>🎬 Video uputstva</h1>
-
-<div class="cards">
-
-  <!-- KARTICA 1 -->
-  <div class="card">
-    <h3>Podesavanje Titlova na HISENSE VIDAA TV-u</h3>
-    <div class="video">
-      <iframe 
-        src="https://www.youtube.com/embed/VIDEO_ID_1"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen>
-      </iframe>
-    </div>
-    <a class="btn" href="https://youtu.be/a3IGZCqTz64" target="_blank">
-      Otvori na YouTube
-    </a>
+  <!-- LOGO -->
+  <div class="logo">
+    <img src="logo.png" alt="Balkan Media Logo">
   </div>
 
-  <!-- KARTICA 2 -->
-  <div class="card">
-    <h3>Instalcija AMAZON FIRE Stick uredjaja</h3>
-    <div class="video">
-      <iframe 
-        src="https://www.youtube.com/embed/VIDEO_ID_2"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen>
-      </iframe>
+  <h1>🎬 Video uputstva</h1>
+
+  <div class="cards">
+
+    <div class="card">
+      <h3>Podešavanje titlova na HISENSE VIDAA TV</h3>
+      <div class="video">
+        <iframe src="https://www.youtube.com/embed/a3IGZCqTz64" allowfullscreen></iframe>
+      </div>
+      <a class="btn" href="https://youtu.be/a3IGZCqTz64" target="_blank">Otvori na YouTube</a>
     </div>
-    <a class="btn" href="https://youtu.be/IzRNOzp76GM" target="_blank">
-      Otvori na YouTube
-    </a>
+
+    <div class="card">
+      <h3>Instalacija Amazon Fire Stick uređaja</h3>
+      <div class="video">
+        <iframe src="https://www.youtube.com/embed/IzRNOzp76GM" allowfullscreen></iframe>
+      </div>
+      <a class="btn" href="https://youtu.be/IzRNOzp76GM" target="_blank">Otvori na YouTube</a>
+    </div>
+
+    <div class="card">
+      <h3>Instaliranje DOWNLOADER aplikacije</h3>
+      <div class="video">
+        <iframe src="https://www.youtube.com/embed/_yQXHL_9BiQ" allowfullscreen></iframe>
+      </div>
+      <a class="btn" href="https://youtu.be/_yQXHL_9BiQ" target="_blank">Otvori na YouTube</a>
+    </div>
+
+    <div class="card">
+      <h3>Downloader instalacija na Android TV</h3>
+      <div class="video">
+        <iframe src="https://www.youtube.com/embed/CiBRaw1TEUY" allowfullscreen></iframe>
+      </div>
+      <a class="btn" href="https://youtu.be/CiBRaw1TEUY" target="_blank">Otvori na YouTube</a>
+    </div>
+
+    <div class="card">
+      <h3>Ibo Player Pro – Roku TV</h3>
+      <div class="video">
+        <iframe src="https://www.youtube.com/embed/kvrbqINb2zo" allowfullscreen></iframe>
+      </div>
+      <a class="btn" href="https://youtu.be/kvrbqINb2zo" target="_blank">Otvori na YouTube</a>
+    </div>
+
   </div>
 
-  <!-- KARTICA 3 -->
-  <div class="card">
-    <h3>Instaliranje DOWNLOADER aplikacije na Amazon Fire Stick</h3>
-    <div class="video">
-      <iframe 
-        src="https://www.youtube.com/embed/VIDEO_ID_3"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen>
-      </iframe>
-    </div>
-    <a class="btn" href="https://youtu.be/_yQXHL_9BiQ" target="_blank">
-      Otvori na YouTube
-    </a>
+  <div class="footer">
+    © 2026 Balkan Media • Sva prava zadržana
   </div>
 
-    <!-- KARTICA 4 -->
-  <div class="card">
-    <h3>Downoader Instalacija Na ANDROID TV</h3>
-    <div class="video">
-      <iframe 
-        src="https://www.youtube.com/embed/VIDEO_ID_3"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen>
-      </iframe>
-    </div>
-    <a class="btn" href="https://youtu.be/CiBRaw1TEUY" target="_blank">
-      Otvori na YouTube
-    </a>
-  </div>
-
-      <!-- KARTICA 5 -->
-  <div class="card">
-    <h3>Ibo Player Pro za Roku TV, Roku Stick i Roku Box</h3>
-    <div class="video">
-      <iframe 
-        src="https://www.youtube.com/embed/VIDEO_ID_3"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen>
-      </iframe>
-    </div>
-    <a class="btn" href="https://youtu.be/kvrbqINb2zo" target="_blank">
-      Otvori na YouTube
-    </a>
-  </div>
-
-</div>
 </div>
 </body>
 </html>
